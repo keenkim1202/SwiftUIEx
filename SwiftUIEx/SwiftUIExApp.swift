@@ -1,8 +1,8 @@
 //
-//  SwiftUITutorialApp.swift
-//  SwiftUITutorial
+//  SwiftUIExApp.swift
+//  SwiftUIEx
 //
-//  Created by 김혜진 on 2022/09/14.
+//  Created by KeenKim on 2022/09/15.
 //
 
 import SwiftUI
@@ -13,7 +13,7 @@ import SwiftUI
  @main : 앱의 진입점을 가리키는 attribute identifier
  */
 @main
-struct SwiftUITutorialApp: App { // APP : A type that represents the structure and behavior of an app.
+struct SwiftUIExApp: App { // APP : A type that represents the structure and behavior of an app.
     var body: some Scene {
         WindowGroup {
             ContentView()

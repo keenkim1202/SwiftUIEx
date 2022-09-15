@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  SwiftUITutorial
+//  SwiftUIEx
 //
-//  Created by 김혜진 on 2022/09/14.
+//  Created by KeenKim on 2022/09/15.
 //
 
 import SwiftUI
