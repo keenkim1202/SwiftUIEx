@@ -29,3 +29,50 @@ ex.
  - `VStack` : Vertical StackView 랑 비슷
  - `ZStack` : addSubview 하듯 제일 상위 뷰에 스택을 쌓는 느낌
  (preview에서도 추가 가능)
+
+- Sttack은 ViewBuilder에 하위뷰를 넣어두기만 하면 세세한 제약조건 설정없이도 적절한 배치를 알아서 해준다.
+    - 상위뷰(parentView)가 하위뷰(childView) 의 위치와 크기를 제안해주기 때문에 가능
+    - childView에 별다른 설정을 해주지 않는다면 parentView가 제안한 위치로 설정한다.
+```
+parentView는 제안을 할 뿐, 실제 크기/위치에 대한 결정권은 childView가 가지고 있다.
+parentView가 제안해준 위치를 활용할 수도 있는데 이때 사용하는 것이 geometryReader이다.
+```
+
+
+## GeometryReader
+- Stack들을 적절히 이용하면 웬만하게 원하는 뷰는 그릴 수 있다.
+- 위의 stack의 설명 부분에서 말한 'parentView가 제안한 위치'가 마음에 들지 않을 때(디테일한 조정을 해주고 싶을 떄)는 `geometryReader`를 사용한다.
+- 부모뷰에 대하여 상대적으로 자식뷰들의 위치나 크기를 정할 때 사용한다.
+
+```swift
+        VStack {
+            // 부모뷰에 대하여 4 : 3 : 2 의 너비 비율을 갖도록 구성하고 싶을 때
+            GeometryReader { geometry in
+                let width = geometry.size.width
+                
+                HStack(spacing: 0) {
+                    Spacer()
+                    Text("menu A")
+                        .multilineTextAlignment(.leading)
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .frame(width: width * 0.4)
+                        .background(.yellow)
+                    Spacer()
+                    Text("menu B")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .frame(width: width * 0.3)
+                        .background(.orange)
+                    Spacer()
+                    Text("menu C")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .frame(width: width * 0.2)
+                        .background(.green)
+                    Spacer()
+                }
+            }
+            .background(.gray)
+            .frame(maxHeight: 18)
+```
