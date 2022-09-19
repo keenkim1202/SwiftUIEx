@@ -38,10 +38,10 @@ parentView는 제안을 할 뿐, 실제 크기/위치에 대한 결정권은 chi
 parentView가 제안해준 위치를 활용할 수도 있는데 이때 사용하는 것이 geometryReader이다.
 ```
 
+- 'parentView가 제안한 위치'가 마음에 들지 않을 때(디테일한 조정을 해주고 싶을 때)는 parentView의 제안을 무시하고 직접 자신의 위치, 모양을 선언할 수 있다.
 
 ## GeometryReader
 - Stack들을 적절히 이용하면 웬만하게 원하는 뷰는 그릴 수 있다.
-- 위의 stack의 설명 부분에서 말한 'parentView가 제안한 위치'가 마음에 들지 않을 때(디테일한 조정을 해주고 싶을 떄)는 `geometryReader`를 사용한다.
 - 부모뷰에 대하여 상대적으로 자식뷰들의 위치나 크기를 정할 때 사용한다.
 
 ```swift
