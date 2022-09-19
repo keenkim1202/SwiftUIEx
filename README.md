@@ -41,9 +41,16 @@ parentView가 제안해준 위치를 활용할 수도 있는데 이때 사용하
 - 'parentView가 제안한 위치'가 마음에 들지 않을 때(디테일한 조정을 해주고 싶을 때)는 parentView의 제안을 무시하고 직접 자신의 위치, 모양을 선언할 수 있다.
 
 ## GeometryReader
+> A container view that defines its content as a function of its own size and coordinate space.
+
+- geometryReader는 그 자체가 View 이다.
+- container 안의 view 스스로의 크기와 위치를 함수로 정의한다.
+
+### 쓰임
 - Stack들을 적절히 이용하면 웬만하게 원하는 뷰는 그릴 수 있다.
 - 부모뷰에 대하여 상대적으로 자식뷰들의 위치나 크기를 정할 때 사용한다.
 
+### Ex
 ```swift
         VStack {
             // 부모뷰에 대하여 4 : 3 : 2 의 너비 비율을 갖도록 구성하고 싶을 때
