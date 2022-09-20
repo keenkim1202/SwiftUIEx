@@ -92,3 +92,40 @@ parentView가 제안해준 위치를 활용할 수도 있는데 이때 사용하
                 .foregroundColor(.green)
             .frame(width: 30)
 ```
+
+## HStack 안의 VStack 2개
+<img width="300" src="https://user-images.githubusercontent.com/59866819/191177529-f9e99b83-cb8c-4b6b-acb6-844415c83fbf.png">
+
+```swift
+        HStack {
+            VStack(alignment: .leading) {
+                Text("elem A")
+                    .multilineTextAlignment(.leading)
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.black)
+                    .background(.yellow)
+                Text("elem B")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.black)
+                    .background(.orange)
+            }
+            
+            Spacer()
+            
+            VStack {
+                HorizontalLabelView(label: "elem1", content: "test1")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.blue)
+                HorizontalLabelView(label: "elem22", content: "test22")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.blue)
+                HorizontalLabelView(label: "elem333", content: "test3333")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.blue)
+            }
+            .background(.white)
+            .fixedSize(horizontal: true, vertical: false)
+        }
+        .frame(height: 60)
+        .background(.cyan)
+```
