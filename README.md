@@ -129,3 +129,29 @@ parentView가 제안해준 위치를 활용할 수도 있는데 이때 사용하
         .frame(height: 60)
         .background(.cyan)
 ```
+
+## 특정 높이의 뷰 안에 stack을 원하는 비율로 넣기
+<img width="300" src="https://user-images.githubusercontent.com/59866819/191203716-89114f0b-4d7a-4530-84a6-5dcc200ba7ff.png">
+
+```swift
+        VStack(spacing: 10) {
+            GeometryReader { geo in
+                let width = geo.size.width
+                
+                HStack {
+                    TextView(text: "view 1 view 1 view 1 view 1", color: .blue)
+                        .frame(width: width * 0.3)
+                    Spacer()
+                    TextView(text: "view 2 view 2 view 2 view 2", color: .green)
+                        .frame(width: width * 0.6)
+                }
+            }
+            .frame(height: 300)
+            .background(.yellow)
+            
+            TextView(text: "view 3", color: .orange)
+        }
+        .background(.gray)
+```
+
+
