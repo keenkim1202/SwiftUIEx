@@ -83,3 +83,12 @@ parentView가 제안해준 위치를 활용할 수도 있는데 이때 사용하
             .background(.gray)
             .frame(maxHeight: 18)
 ```
+
+## 이미지 비율 설정 (ratio)
+```swift
+            Image(systemName: "arrowtriangle.up.fill")
+                .resizable()
+                .aspectRatio(3/2, contentMode: .fit)
+                .foregroundColor(.green)
+            .frame(width: 30)
+```
