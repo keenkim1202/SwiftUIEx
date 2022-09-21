@@ -29,3 +29,129 @@ ex.
  - `VStack` : Vertical StackView 랑 비슷
  - `ZStack` : addSubview 하듯 제일 상위 뷰에 스택을 쌓는 느낌
  (preview에서도 추가 가능)
+
+- Sttack은 ViewBuilder에 하위뷰를 넣어두기만 하면 세세한 제약조건 설정없이도 적절한 배치를 알아서 해준다.
+    - 상위뷰(parentView)가 하위뷰(childView) 의 위치와 크기를 제안해주기 때문에 가능
+    - childView에 별다른 설정을 해주지 않는다면 parentView가 제안한 위치로 설정한다.
+```
+parentView는 제안을 할 뿐, 실제 크기/위치에 대한 결정권은 childView가 가지고 있다.
+parentView가 제안해준 위치를 활용할 수도 있는데 이때 사용하는 것이 geometryReader이다.
+```
+
+- 'parentView가 제안한 위치'가 마음에 들지 않을 때(디테일한 조정을 해주고 싶을 때)는 parentView의 제안을 무시하고 직접 자신의 위치, 모양을 선언할 수 있다.
+
+## GeometryReader
+> A container view that defines its content as a function of its own size and coordinate space.
+
+- geometryReader는 그 자체가 View 이다.
+- container 안의 view 스스로의 크기와 위치를 함수로 정의한다.
+
+### 쓰임
+- Stack들을 적절히 이용하면 웬만하게 원하는 뷰는 그릴 수 있다.
+- 부모뷰에 대하여 상대적으로 자식뷰들의 위치나 크기를 정할 때 사용한다.
+
+### Ex
+```swift
+        VStack {
+            // 부모뷰에 대하여 4 : 3 : 2 의 너비 비율을 갖도록 구성하고 싶을 때
+            GeometryReader { geometry in
+                let width = geometry.size.width
+                
+                HStack(spacing: 0) {
+                    Spacer()
+                    Text("menu A")
+                        .multilineTextAlignment(.leading)
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .frame(width: width * 0.4)
+                        .background(.yellow)
+                    Spacer()
+                    Text("menu B")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .frame(width: width * 0.3)
+                        .background(.orange)
+                    Spacer()
+                    Text("menu C")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                        .frame(width: width * 0.2)
+                        .background(.green)
+                    Spacer()
+                }
+            }
+            .background(.gray)
+            .frame(maxHeight: 18)
+```
+
+## 이미지 비율 설정 (ratio)
+```swift
+            Image(systemName: "arrowtriangle.up.fill")
+                .resizable()
+                .aspectRatio(3/2, contentMode: .fit)
+                .foregroundColor(.green)
+            .frame(width: 30)
+```
+
+## HStack 안의 VStack 2개
+<img width="300" src="https://user-images.githubusercontent.com/59866819/191177529-f9e99b83-cb8c-4b6b-acb6-844415c83fbf.png">
+
+```swift
+        HStack {
+            VStack(alignment: .leading) {
+                Text("elem A")
+                    .multilineTextAlignment(.leading)
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.black)
+                    .background(.yellow)
+                Text("elem B")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.black)
+                    .background(.orange)
+            }
+            
+            Spacer()
+            
+            VStack {
+                HorizontalLabelView(label: "elem1", content: "test1")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.blue)
+                HorizontalLabelView(label: "elem22", content: "test22")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.blue)
+                HorizontalLabelView(label: "elem333", content: "test3333")
+                    .font(.system(size: 12, weight: .medium))
+                    .foregroundColor(.blue)
+            }
+            .background(.white)
+            .fixedSize(horizontal: true, vertical: false)
+        }
+        .frame(height: 60)
+        .background(.cyan)
+```
+
+## 특정 높이의 뷰 안에 stack을 원하는 비율로 넣기
+<img width="300" src="https://user-images.githubusercontent.com/59866819/191203716-89114f0b-4d7a-4530-84a6-5dcc200ba7ff.png">
+
+```swift
+        VStack(spacing: 10) {
+            GeometryReader { geo in
+                let width = geo.size.width
+                
+                HStack {
+                    TextView(text: "view 1 view 1 view 1 view 1", color: .blue)
+                        .frame(width: width * 0.3)
+                    Spacer()
+                    TextView(text: "view 2 view 2 view 2 view 2", color: .green)
+                        .frame(width: width * 0.6)
+                }
+            }
+            .frame(height: 300)
+            .background(.yellow)
+            
+            TextView(text: "view 3", color: .orange)
+        }
+        .background(.gray)
+```
+
+
