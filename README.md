@@ -4,6 +4,9 @@ SwiftUI 를 사용한 UI 그리기 연습 레포
 ## 참고 링크
 - [SwiftUI by Example](https://www.hackingwithswift.com/quick-start/swiftui)
 
+### 번역
+- What is SwiftUI?
+
 ## Memo
 
 - 우선 내가 현재 필요로 하는 메서드, 프러퍼티 위주로 훑는 것을 목표로 한다. 
