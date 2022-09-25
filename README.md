@@ -7,9 +7,7 @@ SwiftUI 를 사용한 UI 그리기 연습 레포
 ### 번역
 - [What is SwiftUI?](Docs/what_is_swiftui.md)
 
-## Memo
-
-- 우선 내가 현재 필요로 하는 메서드, 프러퍼티 위주로 훑는 것을 목표로 한다. 
+## Memo 
 
 ### SwiftUI에서의 CustomView
 - 두 가지 구조체를 선언
@@ -159,5 +157,3 @@ parentView가 제안해준 위치를 활용할 수도 있는데 이때 사용하
         }
         .background(.gray)
 ```
-
-
