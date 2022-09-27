@@ -16,7 +16,8 @@ import SwiftUI
 struct SwiftUIExApp: App { // APP : A type that represents the structure and behavior of an app.
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // ContentView()
+            PickerView(["A", "B", "C"])
         }
     }
 }
