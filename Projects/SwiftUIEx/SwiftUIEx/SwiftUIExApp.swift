@@ -17,7 +17,8 @@ struct SwiftUIExApp: App { // APP : A type that represents the structure and beh
     var body: some Scene {
         WindowGroup {
             // ContentView()
-            PickerView(["A", "B", "C"])
+            // PickerView(["A", "B", "C"])
+            TextEditVew()
         }
     }
 }

@@ -32,45 +32,6 @@ struct PickerView: View {
     }
 }
 
-struct CustomButton: View {
-    var alignment: Alignment = .center
-    var text: String
-    
-    init(_ text: String, alignment: Alignment = .center) {
-        self.text = text
-        self.alignment = alignment
-    }
-    
-    var body: some View {
-        ZStack(alignment: alignment) {
-            RoundedRectangle(cornerRadius: 8)
-                .strokeBorder()
-                .foregroundColor(.blue)
-            HStack {
-                Spacer()
-                Image(systemName: "arrow.down.circle").padding(8)
-            }
-            
-            Text(text)
-                .lineLimit(1)
-                .minimumScaleFactor(0.5)
-                .font(.subheadline)
-                .foregroundColor(.blue)
-                .padding(8)
-        }
-        .padding([.leading, .trailing], 16)
-        .frame(height: 36)
-    }
-}
-
-extension CustomButton {
-    func alignment(_ alignment: Alignment) -> Self {
-        var copy = self
-        copy.alignment = alignment
-        return copy
-    }
-}
-
 struct PickerView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
