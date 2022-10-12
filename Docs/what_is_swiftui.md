@@ -75,6 +75,6 @@ boolean값이 on 이거나 off 이거나.
 
 ----
 
-[원문보기](hackingwithswift.com/quick-start/swiftui/what-is-swiftui)
+[원문보기](https://www.hackingwithswift.com/quick-start/swiftui/what-is-swiftui)
 
 ----
