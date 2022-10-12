@@ -6,6 +6,7 @@ SwiftUI 를 사용한 UI 그리기 연습 레포
 
 ### 번역
 - [What is SwiftUI?](Docs/what_is_swiftui.md)
+- [SwiftUI vs Interface Builder and storyboards](Docs/SwiftUI_vs_Interface_Builder_and_storyboards.md)
 
 ## Memo 
 
