@@ -1,25 +1,27 @@
 # SwiftUI vs Interface Builder and storyboards
 
-iOS 개발자라면 누구나 interface builder와 storyboard가 친숙할 것이다.  
-아마 XIB와도 그럴 것이다.  
-이들을 좋아하지 않을 순 있지만, 적어도 친숙할 것이다.  
-만약 이것들은 이전에 사용해보지 않았다면 이 글을 그저 넘겨도 좋다.  
+> iOS 개발자라면 누구나 `interface builder`와 `storyboard`가 친숙할 것이다. 아마 `XIB`와도 그럴 것이다.  
+> 이들을 좋아하지 않을 순 있지만, 적어도 친숙할 것이다.  
+> 만약 이것들은 이전에 사용해보지 않았다면 이 글을 그저 넘겨도 좋다.  
 
 </br>
 
 ### 아직 여기에 있는가?  
 그것은 너가 IB를 전에사용해보았고 SwiftUI는 무엇이 다른가 궁금해할지도 모른다는 이야기이다.  
-당신에게 이런 질문을 해보겠다. storyboard와 XIB를 직접 수정해본적이 있는가??  
+당신에게 이런 질문을 해보겠다. 
+```
+" storyboard와 XIB를 직접 수정해본적이 있는가?? "
+```
 
-
-아마 아닐 것이다. 어쩌다 한번쯤은 그래봤을 순 있지만 대부분의 대답은 no 일 것이다 
-- storyboard나 XIB는 읽고 수정하기 어려운 엄청난 양의 XML 파일을 포함하고 있다.  
+아마 아닐 것이다. 어쩌다 한번쯤은 그래봤을 순 있지만 대부분의 대답은 "No" 일 것이다 
+- `storyboard`나 `XIB`는 읽고 수정하기 어려운 엄청난 양의 XML 파일을 포함하고 있다.  
 
 </br>
 
 ### 더 최악인 것은 storyboard는 시간이 갈수록 점점 커지는 습관을 가지고 있다.  
 물론 처음에는 그들도 작은 규모일 것이다.  
-하지만 당신이 다른 화면의 viewcontroller를 추가하고, 또 추가하고 하다면 갑자기 당신은 하나의 파일안에 10개의 화면에 대한 데이터를 가지고 있다는 사실을 깨닫게 될 것이다.  
+하지만 당신이 다른 화면의 viewcontroller를 추가하고, 또 추가하고 하다면   
+갑자기 당신은 하나의 파일안에 10개의 화면에 대한 데이터를 가지고 있다는 사실을 깨닫게 될 것이다.  
 그리고 어느 source control의 변화는 당신에게 갑작스러운 고통을 만들 것이다.  
 하지만 하나의 실수는 좋지 않고, 어떤 사람의 storyboard 수정이 담긴 PR을 열었을 때 무엇이 바뀌었는지 알아보기는 거의 불가능하다는 점도 있지만,  
 storyboard와 XIB는 더 큰 문제를 가지고 있다.
@@ -46,7 +48,8 @@ storyboard와 XIB는 더 큰 문제를 가지고 있다.
 </br>
 
 ### SwiftUI는 과거에서부터 지속된 문제점을 깨버린다.  
-그것은 `Swift-only framework`이다. Apple이 Objective-C를 보낼 때가 됬다고 결정했기 때문이 아니라, SwiftUI 가 Swift의 기능의 전체 범위에 영향을 미치기 때문이다. 
+그것은 `Swift-only framework`이다.   
+Apple이 Objective-C를 보낼 때가 됬다고 결정했기 때문이 아니라, SwiftUI 가 Swift의 기능의 전체 범위에 영향을 미치기 때문이다. 
 - value types, opaque return types, protocol extension 등등.  
 
 </br>
