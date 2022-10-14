@@ -18,7 +18,8 @@ struct SwiftUIExApp: App { // APP : A type that represents the structure and beh
         WindowGroup {
             // ContentView()
             // PickerView(["A", "B", "C"])
-            TextEditVew()
+            // TextEditVew()
+            CopyTextView()
         }
     }
 }

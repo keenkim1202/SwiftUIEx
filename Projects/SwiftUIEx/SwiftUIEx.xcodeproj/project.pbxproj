@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C04049828F6A75500B599E4 /* CopyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C04049728F6A75500B599E4 /* CopyTextView.swift */; };
+		1C04049A28F6A7B700B599E4 /* SimpleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C04049928F6A7B700B599E4 /* SimpleButtonView.swift */; };
 		1C1A9DEB28E296B8008D6CF1 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9DEA28E296B8008D6CF1 /* PickerView.swift */; };
 		1C1A9E0728E41748008D6CF1 /* TextEditVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9E0628E41748008D6CF1 /* TextEditVew.swift */; };
 		1C1A9E0928E41A31008D6CF1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9E0828E41A31008D6CF1 /* CustomButton.swift */; };
@@ -17,10 +19,14 @@
 		1C26FB8A28D2C52600F059ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C26FB8928D2C52600F059ED /* Preview Assets.xcassets */; };
 		1CAEBF2B28D95E3000BD8D3C /* HorizontalLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAEBF2A28D95E3000BD8D3C /* HorizontalLabelView.swift */; };
 		1CAEBF2D28D98CD700BD8D3C /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAEBF2C28D98CD700BD8D3C /* TextView.swift */; };
+		1CE4775728F929250095AA78 /* FoldableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4775628F929250095AA78 /* FoldableView.swift */; };
+		1CE4775928F9294A0095AA78 /* Collapsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4775828F9294A0095AA78 /* Collapsable.swift */; };
 		1CFD02C628DADB48004025E0 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD02C528DADB48004025E0 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C04049728F6A75500B599E4 /* CopyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyTextView.swift; sourceTree = "<group>"; };
+		1C04049928F6A7B700B599E4 /* SimpleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleButtonView.swift; sourceTree = "<group>"; };
 		1C1A9DEA28E296B8008D6CF1 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		1C1A9E0628E41748008D6CF1 /* TextEditVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditVew.swift; sourceTree = "<group>"; };
 		1C1A9E0828E41A31008D6CF1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		1C26FB8928D2C52600F059ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CAEBF2A28D95E3000BD8D3C /* HorizontalLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLabelView.swift; sourceTree = "<group>"; };
 		1CAEBF2C28D98CD700BD8D3C /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		1CE4775628F929250095AA78 /* FoldableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldableView.swift; sourceTree = "<group>"; };
+		1CE4775828F9294A0095AA78 /* Collapsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collapsable.swift; sourceTree = "<group>"; };
 		1CFD02C528DADB48004025E0 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,17 +73,14 @@
 		1C26FB8128D2C52600F059ED /* SwiftUIEx */ = {
 			isa = PBXGroup;
 			children = (
+				1CE4775D28F929A20095AA78 /* Commons */,
+				1CE4775C28F929910095AA78 /* CustomButtons */,
+				1CE4775B28F929830095AA78 /* CustomViews */,
+				1CE4775A28F929700095AA78 /* FoldableView */,
 				1C26FB8228D2C52600F059ED /* SwiftUIExApp.swift */,
 				1C26FB8428D2C52600F059ED /* ContentView.swift */,
-				1CFD02C528DADB48004025E0 /* SliderView.swift */,
-				1CAEBF2A28D95E3000BD8D3C /* HorizontalLabelView.swift */,
-				1CAEBF2C28D98CD700BD8D3C /* TextView.swift */,
 				1C26FB8628D2C52600F059ED /* Assets.xcassets */,
 				1C26FB8828D2C52600F059ED /* Preview Content */,
-				1C1A9DEA28E296B8008D6CF1 /* PickerView.swift */,
-				1C1A9E0828E41A31008D6CF1 /* CustomButton.swift */,
-				1C1A9E0A28E41C41008D6CF1 /* noop.swift */,
-				1C1A9E0628E41748008D6CF1 /* TextEditVew.swift */,
 			);
 			path = SwiftUIEx;
 			sourceTree = "<group>";
@@ -86,6 +91,45 @@
 				1C26FB8928D2C52600F059ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CE4775A28F929700095AA78 /* FoldableView */ = {
+			isa = PBXGroup;
+			children = (
+				1CE4775628F929250095AA78 /* FoldableView.swift */,
+				1CE4775828F9294A0095AA78 /* Collapsable.swift */,
+			);
+			path = FoldableView;
+			sourceTree = "<group>";
+		};
+		1CE4775B28F929830095AA78 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A9DEA28E296B8008D6CF1 /* PickerView.swift */,
+				1C1A9E0628E41748008D6CF1 /* TextEditVew.swift */,
+				1C04049728F6A75500B599E4 /* CopyTextView.swift */,
+				1CFD02C528DADB48004025E0 /* SliderView.swift */,
+				1CAEBF2A28D95E3000BD8D3C /* HorizontalLabelView.swift */,
+				1CAEBF2C28D98CD700BD8D3C /* TextView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1CE4775C28F929910095AA78 /* CustomButtons */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A9E0828E41A31008D6CF1 /* CustomButton.swift */,
+				1C04049928F6A7B700B599E4 /* SimpleButtonView.swift */,
+			);
+			path = CustomButtons;
+			sourceTree = "<group>";
+		};
+		1CE4775D28F929A20095AA78 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A9E0A28E41C41008D6CF1 /* noop.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,13 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C04049828F6A75500B599E4 /* CopyTextView.swift in Sources */,
 				1CAEBF2B28D95E3000BD8D3C /* HorizontalLabelView.swift in Sources */,
 				1C1A9E0728E41748008D6CF1 /* TextEditVew.swift in Sources */,
 				1CAEBF2D28D98CD700BD8D3C /* TextView.swift in Sources */,
 				1C1A9DEB28E296B8008D6CF1 /* PickerView.swift in Sources */,
+				1CE4775728F929250095AA78 /* FoldableView.swift in Sources */,
+				1C04049A28F6A7B700B599E4 /* SimpleButtonView.swift in Sources */,
 				1C1A9E0928E41A31008D6CF1 /* CustomButton.swift in Sources */,
 				1C26FB8528D2C52600F059ED /* ContentView.swift in Sources */,
 				1C26FB8328D2C52600F059ED /* SwiftUIExApp.swift in Sources */,
+				1CE4775928F9294A0095AA78 /* Collapsable.swift in Sources */,
 				1C1A9E0B28E41C41008D6CF1 /* noop.swift in Sources */,
 				1CFD02C628DADB48004025E0 /* SliderView.swift in Sources */,
 			);
