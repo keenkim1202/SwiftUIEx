@@ -21,6 +21,7 @@
 		1CAEBF2D28D98CD700BD8D3C /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAEBF2C28D98CD700BD8D3C /* TextView.swift */; };
 		1CE4775728F929250095AA78 /* FoldableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4775628F929250095AA78 /* FoldableView.swift */; };
 		1CE4775928F9294A0095AA78 /* Collapsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4775828F9294A0095AA78 /* Collapsable.swift */; };
+		1CE4776128F9B2380095AA78 /* TransitionTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4776028F9B2380095AA78 /* TransitionTestView.swift */; };
 		1CFD02C628DADB48004025E0 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD02C528DADB48004025E0 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		1CAEBF2C28D98CD700BD8D3C /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		1CE4775628F929250095AA78 /* FoldableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldableView.swift; sourceTree = "<group>"; };
 		1CE4775828F9294A0095AA78 /* Collapsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collapsable.swift; sourceTree = "<group>"; };
+		1CE4776028F9B2380095AA78 /* TransitionTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTestView.swift; sourceTree = "<group>"; };
 		1CFD02C528DADB48004025E0 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 			children = (
 				1CE4775628F929250095AA78 /* FoldableView.swift */,
 				1CE4775828F9294A0095AA78 /* Collapsable.swift */,
+				1CE4776028F9B2380095AA78 /* TransitionTestView.swift */,
 			);
 			path = FoldableView;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				1C26FB8528D2C52600F059ED /* ContentView.swift in Sources */,
 				1C26FB8328D2C52600F059ED /* SwiftUIExApp.swift in Sources */,
 				1CE4775928F9294A0095AA78 /* Collapsable.swift in Sources */,
+				1CE4776128F9B2380095AA78 /* TransitionTestView.swift in Sources */,
 				1C1A9E0B28E41C41008D6CF1 /* noop.swift in Sources */,
 				1CFD02C628DADB48004025E0 /* SliderView.swift in Sources */,
 			);
