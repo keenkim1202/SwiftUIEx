@@ -12,7 +12,7 @@ struct WebviewExApp: App {
     var body: some Scene {
         WindowGroup {
             // ContentView()
-            WebView2View(link: "")
+            WebView2View()
         }
     }
 }

@@ -18,6 +18,7 @@
 		1CE4778528FD3FCF0095AA78 /* TestNaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4778428FD3FCF0095AA78 /* TestNaviView.swift */; };
 		1CE4778728FD44AB0095AA78 /* WebView2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4778628FD44AB0095AA78 /* WebView2View.swift */; };
 		1CE4778928FD44D40095AA78 /* WebView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4778828FD44D40095AA78 /* WebView2.swift */; };
+		1CE4778B28FE9FB70095AA78 /* ListExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4778A28FE9FB70095AA78 /* ListExView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		1CE4778428FD3FCF0095AA78 /* TestNaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNaviView.swift; sourceTree = "<group>"; };
 		1CE4778628FD44AB0095AA78 /* WebView2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView2View.swift; sourceTree = "<group>"; };
 		1CE4778828FD44D40095AA78 /* WebView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView2.swift; sourceTree = "<group>"; };
+		1CE4778A28FE9FB70095AA78 /* ListExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				1CE4777028FD3CE60095AA78 /* ContentView.swift */,
 				1CE4778628FD44AB0095AA78 /* WebView2View.swift */,
 				1CE4778828FD44D40095AA78 /* WebView2.swift */,
+				1CE4778A28FE9FB70095AA78 /* ListExView.swift */,
 				1CE4778428FD3FCF0095AA78 /* TestNaviView.swift */,
 				1CE4777C28FD3D5E0095AA78 /* WebViewModel.swift */,
 				1CE4777E28FD3D9E0095AA78 /* WebViewContainer.swift */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE4778128FD3DE30095AA78 /* WebViewCoordinator.swift in Sources */,
+				1CE4778B28FE9FB70095AA78 /* ListExView.swift in Sources */,
 				1CE4778928FD44D40095AA78 /* WebView2.swift in Sources */,
 				1CE4777128FD3CE60095AA78 /* ContentView.swift in Sources */,
 				1CE4778528FD3FCF0095AA78 /* TestNaviView.swift in Sources */,

@@ -8,31 +8,48 @@
 import SwiftUI
 
 struct WebView2View: View {
-    @State var link: String
+    enum Links: String {
+        case naver = "https://www.naver.com"
+        case google = "https://www.google.com"
+        case apple = "https://www.apple.com"
+    }
     
     var body: some View {
         VStack {
-            TextField("enter address", text: $link)
-                .padding()
-                .background(Color(uiColor: .secondarySystemBackground))
             
             NavigationView {
-                NavigationLink(destination: SecondView(urlString: $link)) {
-                    Text("show web")
+                NavigationLink(destination: SecondView(urlString: Links.naver.rawValue)) {
+                    Text("naver")
                 }
-                .navigationTitle("Navigation 1")
+                .navigationTitle("NAVER")
+                .navigationBarTitleDisplayMode(.inline)
+            }
+            
+            NavigationView {
+                NavigationLink(destination: SecondView(urlString: Links.google.rawValue)) {
+                    Text("google")
+                }
+                .navigationTitle("GOOGLE")
+                .navigationBarTitleDisplayMode(.inline)
+            }
+            
+            NavigationView {
+                NavigationLink(destination: SecondView(urlString: Links.apple.rawValue)) {
+                    Text("apple")
+                }
+                .navigationTitle("APPLE")
                 .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
     
     struct SecondView: View {
-        var urlString: Binding<String>
+        var urlString: String
         var webView: WebView2?
         
-        init(urlString: Binding<String>) {
+        init(urlString: String) {
             self.urlString = urlString
-            self.webView = WebView2(url: URL(string: urlString.wrappedValue))
+            self.webView = WebView2(url: URL(string: urlString))
         }
 
         var body: some View {
@@ -70,7 +87,7 @@ struct WebView2View: View {
 
 struct WebView2View_Previews: PreviewProvider {
     static var previews: some View {
-        WebView2View(link: "https://www.naver.com")
+        WebView2View()
         // WebView2View.SecondView(urlString: "https://www.naver.com")
         // WebView2(url: URL(string: "https://www.naver.com"))
     }
