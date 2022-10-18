@@ -24,6 +24,18 @@ struct TestNaviView: View {
                             print("Trailing tapped!")
                         }
                     }
+                    ToolbarItemGroup(placement: .bottomBar) { // <-
+                        Button("First") {
+                            print("tap first button")
+                        }
+                        .background(.green)
+                        .foregroundColor(.black)
+                        Button("Second") {
+                            print("tap second button")
+                        }
+                        .background(.red)
+                        .foregroundColor(.black)
+                    }
                 }
         }
     }
