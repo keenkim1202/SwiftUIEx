@@ -10,20 +10,32 @@ import WebKit
 
 struct WebView2: UIViewRepresentable {
     let url: URL?
+    private var webView: WKWebView?
+    
+    init(url: URL?) {
+        self.webView = WKWebView()
+        self.url = url
+    }
     
     func makeUIView(context: Context) -> WKWebView {
-        let prefs = WKWebpagePreferences()
-        prefs.allowsContentJavaScript = true
-        let config = WKWebViewConfiguration()
-        config.defaultWebpagePreferences = prefs
-        
-        let webView = WKWebView(frame: .zero, configuration: config)
-        return webView
+        return webView!
     }
     
     func updateUIView(_ uiView: WKWebView, context: Context) {
         guard let url = url else { return }
         let request = URLRequest(url: url)
         uiView.load(request)
+    }
+    
+    func canGoBack() {
+        webView?.goBack()
+    }
+    
+    func canGoForward() {
+        webView?.goForward()
+    }
+    
+    func reload() {
+        webView?.reload()
     }
 }

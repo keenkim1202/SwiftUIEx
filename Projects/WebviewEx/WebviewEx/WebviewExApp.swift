@@ -11,7 +11,8 @@ import SwiftUI
 struct WebviewExApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // ContentView()
+            WebView2View(link: "")
         }
     }
 }
