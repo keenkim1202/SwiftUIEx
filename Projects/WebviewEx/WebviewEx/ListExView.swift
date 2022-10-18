@@ -12,6 +12,13 @@ struct ListExView: View {
         NavigationView {
             List {
                 Section {
+                    EmptyView()
+                } header: {
+                    Text("Title")
+                        .font(.system(size: 24, weight: .bold))
+                }
+                .headerProminence(.increased) // section top padding to zero
+                Section {
                     NavigationLink(destination: DetailView()) {
                         ListCell(label: "section1 item1", iconName: "paperclip.circle.fill")
                     }
@@ -19,8 +26,10 @@ struct ListExView: View {
                     Text("Section1")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundColor(.black)
+                        .listRowInsets(EdgeInsets())
                 }
                 .textCase(nil)
+                .listRowSeparator(.hidden) // section leading padding to zero
                 .listRowBackground(Color.red)
                 
                 Section {
@@ -30,7 +39,10 @@ struct ListExView: View {
                     Text("Section2")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundColor(.black)
+                        .listRowInsets(EdgeInsets())
                 }
+                .textCase(nil)
+                .listRowSeparator(.hidden)
                 .listRowBackground(Color.green)
                 
                 Section {
@@ -40,7 +52,11 @@ struct ListExView: View {
                     Text("Section3")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundColor(.black)
+                        .listRowInsets(EdgeInsets())
                 }
+                .textCase(nil)
+                .listRowSeparator(.hidden)
+                .listRowBackground(Color.blue)
                 
             }
             .listStyle(.insetGrouped)
