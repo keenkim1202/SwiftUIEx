@@ -17,6 +17,7 @@
 		1C26FB8528D2C52600F059ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26FB8428D2C52600F059ED /* ContentView.swift */; };
 		1C26FB8728D2C52600F059ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C26FB8628D2C52600F059ED /* Assets.xcassets */; };
 		1C26FB8A28D2C52600F059ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C26FB8928D2C52600F059ED /* Preview Assets.xcassets */; };
+		1C826D2B2901A61300CD51C2 /* CopyClipboardEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C826D2A2901A61300CD51C2 /* CopyClipboardEx.swift */; };
 		1CAEBF2B28D95E3000BD8D3C /* HorizontalLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAEBF2A28D95E3000BD8D3C /* HorizontalLabelView.swift */; };
 		1CAEBF2D28D98CD700BD8D3C /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAEBF2C28D98CD700BD8D3C /* TextView.swift */; };
 		1CE4775728F929250095AA78 /* FoldableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4775628F929250095AA78 /* FoldableView.swift */; };
@@ -37,6 +38,7 @@
 		1C26FB8428D2C52600F059ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C26FB8628D2C52600F059ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C26FB8928D2C52600F059ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C826D2A2901A61300CD51C2 /* CopyClipboardEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyClipboardEx.swift; sourceTree = "<group>"; };
 		1CAEBF2A28D95E3000BD8D3C /* HorizontalLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLabelView.swift; sourceTree = "<group>"; };
 		1CAEBF2C28D98CD700BD8D3C /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		1CE4775628F929250095AA78 /* FoldableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldableView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		1C26FB8128D2C52600F059ED /* SwiftUIEx */ = {
 			isa = PBXGroup;
 			children = (
+				1C826D292901A60800CD51C2 /* CopyToClipboardEx */,
 				1CE4775D28F929A20095AA78 /* Commons */,
 				1CE4775C28F929910095AA78 /* CustomButtons */,
 				1CE4775B28F929830095AA78 /* CustomViews */,
@@ -93,6 +96,14 @@
 				1C26FB8928D2C52600F059ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1C826D292901A60800CD51C2 /* CopyToClipboardEx */ = {
+			isa = PBXGroup;
+			children = (
+				1C826D2A2901A61300CD51C2 /* CopyClipboardEx.swift */,
+			);
+			path = CopyToClipboardEx;
 			sourceTree = "<group>";
 		};
 		1CE4775A28F929700095AA78 /* FoldableView */ = {
@@ -219,6 +230,7 @@
 				1CE4776128F9B2380095AA78 /* TransitionTestView.swift in Sources */,
 				1C1A9E0B28E41C41008D6CF1 /* noop.swift in Sources */,
 				1CFD02C628DADB48004025E0 /* SliderView.swift in Sources */,
+				1C826D2B2901A61300CD51C2 /* CopyClipboardEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
