@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CopyClipboardEx: View {
+    @State private var showingAlert = false
     @State var text: String = ""
     @State var copiedText: String = "hellotest"
     
@@ -26,6 +27,7 @@ struct CopyClipboardEx: View {
             .fixedSize(horizontal: false, vertical: true)
             .onTapGesture {
                 UIPasteboard.general.string = copiedText // copy to pastboard
+                self.showingAlert.toggle()
             }
             
             TextField("paste text here.", text: $text)
@@ -34,6 +36,7 @@ struct CopyClipboardEx: View {
                 .background(Color(uiColor: .secondarySystemBackground))
                 .padding(16)
         }
+        .toast(isShowing: $showingAlert, type: .success(message: "successfully copied!"), during: 0.8)
     }
 }
 

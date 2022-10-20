@@ -19,7 +19,8 @@ struct SwiftUIExApp: App { // APP : A type that represents the structure and beh
             // ContentView()
             // PickerView(["A", "B", "C"])
             // TextEditVew()
-            CopyTextView()
+            // CopyTextView()
+            CopyClipboardEx()
         }
     }
 }
