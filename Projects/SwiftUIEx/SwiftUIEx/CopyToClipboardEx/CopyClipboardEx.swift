@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CopyClipboardEx: View {
     @State var text: String = ""
+    @State var copiedText: String = "hellotest"
     
     var body: some View {
         VStack {
@@ -16,7 +17,7 @@ struct CopyClipboardEx: View {
                 RoundedRectangle(cornerRadius: 8)
                     .fill()
                     .foregroundColor(.blue)
-                Text("????")
+                Text(copiedText)
                     .font(.system(size: 14))
                     .foregroundColor(.white)
                     .padding(16)
@@ -24,7 +25,7 @@ struct CopyClipboardEx: View {
             .padding(16)
             .fixedSize(horizontal: false, vertical: true)
             .onTapGesture {
-                print("tapped")
+                UIPasteboard.general.string = copiedText // copy to pastboard
             }
             
             TextField("paste text here.", text: $text)
