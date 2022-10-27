@@ -17,6 +17,7 @@
 		1C26FB8528D2C52600F059ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26FB8428D2C52600F059ED /* ContentView.swift */; };
 		1C26FB8728D2C52600F059ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C26FB8628D2C52600F059ED /* Assets.xcassets */; };
 		1C26FB8A28D2C52600F059ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C26FB8928D2C52600F059ED /* Preview Assets.xcassets */; };
+		1C5CA7B52907C9F1001E1E50 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5CA7B42907C9F1001E1E50 /* TestView.swift */; };
 		1C826D2B2901A61300CD51C2 /* CopyClipboardEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C826D2A2901A61300CD51C2 /* CopyClipboardEx.swift */; };
 		1C826D2D2901B1DE00CD51C2 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C826D2C2901B1DE00CD51C2 /* Toast.swift */; };
 		1C826D2F2901B31A00CD51C2 /* OverlayDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C826D2E2901B31A00CD51C2 /* OverlayDemo.swift */; };
@@ -44,6 +45,7 @@
 		1C26FB8428D2C52600F059ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C26FB8628D2C52600F059ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C26FB8928D2C52600F059ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C5CA7B42907C9F1001E1E50 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		1C826D2A2901A61300CD51C2 /* CopyClipboardEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyClipboardEx.swift; sourceTree = "<group>"; };
 		1C826D2C2901B1DE00CD51C2 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		1C826D2E2901B31A00CD51C2 /* OverlayDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayDemo.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				1CE4775A28F929700095AA78 /* FoldableView */,
 				1C26FB8628D2C52600F059ED /* Assets.xcassets */,
 				1C26FB8828D2C52600F059ED /* Preview Content */,
+				1C5CA7B42907C9F1001E1E50 /* TestView.swift */,
 			);
 			path = SwiftUIEx;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				1C04049828F6A75500B599E4 /* CopyTextView.swift in Sources */,
 				1C826D2D2901B1DE00CD51C2 /* Toast.swift in Sources */,
+				1C5CA7B52907C9F1001E1E50 /* TestView.swift in Sources */,
 				1CAEBF2B28D95E3000BD8D3C /* HorizontalLabelView.swift in Sources */,
 				1C1A9E0728E41748008D6CF1 /* TextEditVew.swift in Sources */,
 				1C826D2F2901B31A00CD51C2 /* OverlayDemo.swift in Sources */,
