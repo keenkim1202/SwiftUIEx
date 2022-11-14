@@ -30,6 +30,7 @@
 		1CE4775728F929250095AA78 /* FoldableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4775628F929250095AA78 /* FoldableView.swift */; };
 		1CE4775928F9294A0095AA78 /* Collapsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4775828F9294A0095AA78 /* Collapsable.swift */; };
 		1CE4776128F9B2380095AA78 /* TransitionTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4776028F9B2380095AA78 /* TransitionTestView.swift */; };
+		1CEAD6EC29157AED005A5BEB /* DynamicHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEAD6EB29157AED005A5BEB /* DynamicHeightView.swift */; };
 		1CFD02C628DADB48004025E0 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD02C528DADB48004025E0 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		1CE4775628F929250095AA78 /* FoldableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldableView.swift; sourceTree = "<group>"; };
 		1CE4775828F9294A0095AA78 /* Collapsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collapsable.swift; sourceTree = "<group>"; };
 		1CE4776028F9B2380095AA78 /* TransitionTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionTestView.swift; sourceTree = "<group>"; };
+		1CEAD6EB29157AED005A5BEB /* DynamicHeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightView.swift; sourceTree = "<group>"; };
 		1CFD02C528DADB48004025E0 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 		1C26FB8128D2C52600F059ED /* SwiftUIEx */ = {
 			isa = PBXGroup;
 			children = (
+				1CEAD6EA29157AD9005A5BEB /* DynamicHeight */,
 				1C826D3629029B5F00CD51C2 /* HalfSheetEx */,
 				1C26FB8228D2C52600F059ED /* SwiftUIExApp.swift */,
 				1C26FB8428D2C52600F059ED /* ContentView.swift */,
@@ -175,6 +178,14 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
+		1CEAD6EA29157AD9005A5BEB /* DynamicHeight */ = {
+			isa = PBXGroup;
+			children = (
+				1CEAD6EB29157AED005A5BEB /* DynamicHeightView.swift */,
+			);
+			path = DynamicHeight;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +262,7 @@
 				1CAEBF2B28D95E3000BD8D3C /* HorizontalLabelView.swift in Sources */,
 				1C1A9E0728E41748008D6CF1 /* TextEditVew.swift in Sources */,
 				1C826D2F2901B31A00CD51C2 /* OverlayDemo.swift in Sources */,
+				1CEAD6EC29157AED005A5BEB /* DynamicHeightView.swift in Sources */,
 				1CAEBF2D28D98CD700BD8D3C /* TextView.swift in Sources */,
 				1C1A9DEB28E296B8008D6CF1 /* PickerView.swift in Sources */,
 				1CE4775728F929250095AA78 /* FoldableView.swift in Sources */,

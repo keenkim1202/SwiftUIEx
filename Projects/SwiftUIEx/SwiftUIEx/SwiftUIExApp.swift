@@ -68,8 +68,8 @@ struct SwiftUIExApp: App { // APP : A type that represents the structure and beh
             //         .background(.yellow)
             //     }
             // }
-            TestView()
-            
+            // TestView()
+            DynamicHeightView()
         }
     }
 }
