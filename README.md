@@ -8,7 +8,8 @@ SwiftUI 를 사용한 UI 그리기 연습 레포
 - [What is SwiftUI?](Docs/what_is_swiftui.md)
 - [SwiftUI vs Interface Builder and storyboards](Docs/SwiftUI_vs_Interface_Builder_and_storyboards.md)
 
-## Memo 
+## Note
+- [GeometryReader](Note/GeometryReader.md)
 
 ### SwiftUI에서의 CustomView
 - 두 가지 구조체를 선언
