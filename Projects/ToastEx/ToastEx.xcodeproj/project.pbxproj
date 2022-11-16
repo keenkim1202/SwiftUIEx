@@ -13,6 +13,8 @@
 		1C2D7EEF2924B3DF000A2AF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2D7EEE2924B3DF000A2AF0 /* Preview Assets.xcassets */; };
 		1C2D7EF62924B57C000A2AF0 /* KeenToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2D7EF52924B57B000A2AF0 /* KeenToastView.swift */; };
 		1CB428CE2924B736003F7B81 /* KeenToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB428CD2924B736003F7B81 /* KeenToastStyle.swift */; };
+		1CB428D02924C241003F7B81 /* KeenToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB428CF2924C241003F7B81 /* KeenToastModifier.swift */; };
+		1CB428D22924C372003F7B81 /* View++Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB428D12924C372003F7B81 /* View++Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		1C2D7EEE2924B3DF000A2AF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C2D7EF52924B57B000A2AF0 /* KeenToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeenToastView.swift; sourceTree = "<group>"; };
 		1CB428CD2924B736003F7B81 /* KeenToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeenToastStyle.swift; sourceTree = "<group>"; };
+		1CB428CF2924C241003F7B81 /* KeenToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeenToastModifier.swift; sourceTree = "<group>"; };
+		1CB428D12924C372003F7B81 /* View++Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View++Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				1C2D7EE92924B3DE000A2AF0 /* ContentView.swift */,
 				1C2D7EF52924B57B000A2AF0 /* KeenToastView.swift */,
 				1CB428CD2924B736003F7B81 /* KeenToastStyle.swift */,
+				1CB428CF2924C241003F7B81 /* KeenToastModifier.swift */,
+				1CB428D12924C372003F7B81 /* View++Extension.swift */,
 				1C2D7EEB2924B3DF000A2AF0 /* Assets.xcassets */,
 				1C2D7EED2924B3DF000A2AF0 /* Preview Content */,
 			);
@@ -145,7 +151,9 @@
 			files = (
 				1C2D7EF62924B57C000A2AF0 /* KeenToastView.swift in Sources */,
 				1C2D7EEA2924B3DE000A2AF0 /* ContentView.swift in Sources */,
+				1CB428D22924C372003F7B81 /* View++Extension.swift in Sources */,
 				1CB428CE2924B736003F7B81 /* KeenToastStyle.swift in Sources */,
+				1CB428D02924C241003F7B81 /* KeenToastModifier.swift in Sources */,
 				1C2D7EE82924B3DE000A2AF0 /* ToastExApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
