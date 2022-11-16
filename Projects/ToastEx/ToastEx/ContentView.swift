@@ -3,14 +3,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var toast: KeenToast? = nil
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button {
+                toast = KeenToast(type: .info, title: "Toast info", message: "This is info message.")
+            } label: {
+                Text("Show Toast!")
+            }
         }
-        .padding()
+        .toastView(toast: $toast)
     }
 }
 
