@@ -11,6 +11,7 @@
 		1C2D7EEA2924B3DE000A2AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2D7EE92924B3DE000A2AF0 /* ContentView.swift */; };
 		1C2D7EEC2924B3DF000A2AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2D7EEB2924B3DF000A2AF0 /* Assets.xcassets */; };
 		1C2D7EEF2924B3DF000A2AF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2D7EEE2924B3DF000A2AF0 /* Preview Assets.xcassets */; };
+		1C2D7EF62924B57C000A2AF0 /* KeenToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2D7EF52924B57B000A2AF0 /* KeenToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1C2D7EE92924B3DE000A2AF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C2D7EEB2924B3DF000A2AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C2D7EEE2924B3DF000A2AF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C2D7EF52924B57B000A2AF0 /* KeenToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeenToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				1C2D7EE72924B3DE000A2AF0 /* ToastExApp.swift */,
 				1C2D7EE92924B3DE000A2AF0 /* ContentView.swift */,
+				1C2D7EF52924B57B000A2AF0 /* KeenToastView.swift */,
 				1C2D7EEB2924B3DF000A2AF0 /* Assets.xcassets */,
 				1C2D7EED2924B3DF000A2AF0 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2D7EF62924B57C000A2AF0 /* KeenToastView.swift in Sources */,
 				1C2D7EEA2924B3DE000A2AF0 /* ContentView.swift in Sources */,
 				1C2D7EE82924B3DE000A2AF0 /* ToastExApp.swift in Sources */,
 			);
