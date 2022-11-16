@@ -1,3 +1,5 @@
+// Ref: https://betterprogramming.pub/swiftui-create-a-fancy-toast-component-in-10-minutes-e6bae6021984
+
 import SwiftUI
 
 struct ContentView: View {
