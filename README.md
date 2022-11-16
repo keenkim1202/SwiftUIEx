@@ -1,15 +1,28 @@
 # SwiftUIEx
 SwiftUI 를 사용한 UI 그리기 연습 레포
 
-## 참고 링크
+## Ref
 - [SwiftUI by Example](https://www.hackingwithswift.com/quick-start/swiftui)
 
-### 번역
+### Translate
 - [What is SwiftUI?](Docs/what_is_swiftui.md)
 - [SwiftUI vs Interface Builder and storyboards](Docs/SwiftUI_vs_Interface_Builder_and_storyboards.md)
 
 ## Note
 - [GeometryReader](Note/GeometryReader.md)
+
+## Project
+- CustomSlider
+    - practice how to make custom slider
+- ListEX
+    - practice how to show list of data (similar with tableView in UIKit)
+- SwiftUIEx
+    - just my testing project. (It will be messy..)
+- ToastEx
+    - practice how to make custom toast
+- WebviewEx
+    - practice how to use webview
+    
 
 ### SwiftUI에서의 CustomView
 - 두 가지 구조체를 선언
