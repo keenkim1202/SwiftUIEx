@@ -1,10 +1,3 @@
-//
-//  KeenToastStyle.swift
-//  ToastEx
-//
-//  Created by KeenKim on 2022/11/16.
-//
-
 import SwiftUI
 
 enum KeenToastStyle {
