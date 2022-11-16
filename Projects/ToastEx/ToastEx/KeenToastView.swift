@@ -1,6 +1,11 @@
 import SwiftUI
 
 struct KeenToastView: View {
+    var type: KeenToastStyle
+    var title: String
+    var message: String
+    var onCancel: (() -> Void)
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
@@ -17,9 +22,7 @@ struct KeenToastView: View {
                 
                 Spacer(minLength: 10)
                 
-                Button {
-                    // TODO
-                } label: {
+                Button(action: onCancel) {
                     Image(systemName: "xmark")
                         .foregroundColor(.black)
                 }
@@ -41,8 +44,22 @@ struct KeenToastView: View {
     }
 }
 
+struct KeenToast: Equatable {
+    var type: KeenToastStyle
+    var title: String
+    var message: String
+    var duration: Double = 3
+}
+
 struct KeenToastView_Previews: PreviewProvider {
     static var previews: some View {
-        KeenToastView()
+        KeenToastView(
+            type: .success,
+            title: "Success",
+            message: "this is success message.") {}
+        KeenToastView(
+            type: .info,
+            title: "Info",
+            message: "this is info message.") {}
     }
 }
