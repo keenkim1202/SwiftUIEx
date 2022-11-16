@@ -35,6 +35,12 @@ struct ContentView: View {
     
     func shareAction(text: String) {
         let activityVC = UIActivityViewController(activityItems: [text], applicationActivities: nil)
-        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true)
+        
+        guard let firstScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let firstWindow = firstScene.windows.first,
+              let rootVC = firstWindow.rootViewController
+        else { return }
+        
+        rootVC.present(activityVC, animated: true)
     }
 }
