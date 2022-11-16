@@ -1,8 +1,7 @@
-//
-//  View++Extension.swift
-//  ToastEx
-//
-//  Created by KeenKim on 2022/11/16.
-//
+import SwiftUI
 
-import Foundation
+extension View {
+    func toastView(toast: Binding<KeenToast?>) -> some View {
+        self.modifier(KeenToastModifier(toast: toast))
+    }
+}
