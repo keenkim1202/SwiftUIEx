@@ -14,7 +14,7 @@ SwiftUI 를 사용한 UI 그리기 연습 레포
 - [GeometryReader](Note/GeometryReader.md)
 
 ## Project
-- CustomSlider
+- [CustomSlider](https://github.com/keenkim1202/SwiftUIEx/tree/main/Projects/CustomSlider)
     - practice how to make custom slider
 - ListEX
     - practice how to show list of data (similar with tableView in UIKit)
