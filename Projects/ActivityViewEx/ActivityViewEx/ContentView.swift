@@ -21,7 +21,7 @@ struct ContentView: View {
                 self.isPresentActivityView.toggle()
             } label: {
                 HStack {
-                    Image(systemName: "square.and.arrow.up")
+                    Image(systemName: "sUIRquare.and.arrow.up")
                         .imageScale(.large)
                         .foregroundColor(.white)
                     Text("Share")
