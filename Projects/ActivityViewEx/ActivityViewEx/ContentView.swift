@@ -8,25 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isPresented: Bool = false
+    // @State var isPresented: Bool = false
     
     var body: some View {
-        VStack(alignment: .center) {
-            Button {
-                self.isPresented = true
-            } label: {
-                HStack {
-                    Text("Show Button View")
-                        .foregroundColor(.white)
-                }
-                .padding(8)
-                .background(.blue)
-                .cornerRadius(8)
-            }
-            .sheet(isPresented: $isPresented) {
-                SheetView()
-            }
-        }
+        // VStack(alignment: .center) {
+        //     Button {
+        //         self.isPresented = true
+        //     } label: {
+        //         HStack {
+        //             Text("Show Button View")
+        //                 .foregroundColor(.white)
+        //         }
+        //         .padding(8)
+        //         .background(.blue)
+        //         .cornerRadius(8)
+        //     }
+        //     .sheet(isPresented: $isPresented) {
+        //         SheetView()
+        //     }
+        // }
+        SheetView()
     }
     
     struct SheetView: View {
@@ -55,15 +56,10 @@ struct ContentView: View {
                 }
                 .background(SharingViewController(isPresenting: $isShare) {
                     let activityVC = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
-                    
-                    // For iPad
-                    // if UIDevice.current.userInterfaceIdiom == .pad {
-                    //     av.popoverPresentationController?.sourceView = UIView()
-                    // }
-                    
                     activityVC.completionWithItemsHandler = { _, _, _, _ in
                         isShare = false
                     }
+                    
                     return activityVC
                 })
             }

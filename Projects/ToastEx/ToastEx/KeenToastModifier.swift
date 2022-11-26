@@ -10,7 +10,7 @@ struct KeenToastModifier: ViewModifier {
             .overlay(
                 ZStack {
                     mainToastView()
-                        .offset(y: -30)
+                        // .offset(y: 30)
                 }
                     .animation(.spring(), value: toast)
             )
@@ -29,7 +29,7 @@ struct KeenToastModifier: ViewModifier {
                     message: toast.message,
                     onCancel: dismissToast)
             }
-            .transition(.move(edge: .bottom))
+            .transition(.move(edge: .top))
         }
     }
     
