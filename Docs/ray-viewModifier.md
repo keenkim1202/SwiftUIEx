@@ -306,3 +306,72 @@ func buttonLabel() -> some View {
 ```swift
 .buttonLabel()
 ```
+
+빌드하고 실행해보면 이전과 같이 똑같은 UI로 잘 작동할 것이다.  
+
+</br>
+
+이 modifier가 잘 작동하는 동안 몇몇의 경우 당신은 버튼의 label뿐 아니라 모든 버튼에 대해 이 스타일링을 적용하고 싶을 수 있다.
+
+</br>
+
+다음으로 당신이 리팩토링해볼 내용이다.  
+button의 label modifier를 수정하고 custom button style을 만들 것이다.
+이것은 또한 button의 `isPressed` 프로퍼티에 의존하여 커스텀 스타일링을 적용할 수 있도록 해준다.
+
+</br> 
+
+## Refactoring ViewModifier Into a ButtonStyle
+`ViewModifiers.swift` 파일을 열고 아래의 코드를 작성해보자.
+```swift
+// 1
+struct PrimaryButtonStyle: ButtonStyle {
+  // 2
+  func makeBody(configuration: Configuration) -> some View {
+    // 3
+    configuration.label
+      .font(.title2)
+      .padding(.horizontal, 30)
+      .padding(.vertical, 8)
+      .foregroundColor(Color.pink)
+      .overlay(
+        RoundedRectangle(cornerRadius: 8)
+          .stroke(Color.pink, lineWidth: 1.5)
+      )
+  }
+}
+```
+
+설명을 해보면 다음과 같다:
+- 1) `ButtonStyle`을 준수하는 `PrimaryButtonStyle` 구조체를 생성한다.
+    - ButtonStyle 타입은 뷰 계층구조에서 모든 버튼들의 표준 생김새와 행동을 제공한다.
+- 2) 그런 후, `some View`를 리턴하는 `makeBody(configuration:)` 메서드를 추가한다.
+    - `configuration` 파라미터는 `Configuration` 타입이다.
+    - 이것은 `ButtonStyleConfiguration` 구조체의 SwiftUI에서 사용하는 `typealias` 이다.
+    - button style을 커스텀하는데 사용되는 몇몇 프로퍼티를 가지고 있다.
+- 3) 몇몇 프로퍼티 중 하나는 버튼의 label 이다.
+    - `configuration.label`을 호출함으로써 당신이 원하는 button의 label 스타일에 대한 modifier를 명시해줄 수 있다.
+
+</br>
+
+이제 이 버튼 스타일을 당신이 필요한 곳에 적용해보자.
+당신이 마지막 modifier를 생성했을 때, 당신이 적용했던 그 버튼 label에 말이다.
+이제 button style modifier를 생성하고, 버튼에 직접적으로 적용해보자.
+
+</br>
+
+`AdoptionFormView.swift` 파일을 열고 label에 대한 modifier를 제거하라.
+그런 후 새로운 modifier를 `alert(_:isPresented:actions:)`의 후행 클로저(trailing closure)에 추가하라:
+```swift
+.buttonStyle(PrimaryButtonStyle())
+```  
+
+</br>
+
+빌드하고 실행해봐라. 마찬가지로 이전과 똑같은 UI를 보여줄 것이다.
+
+</br>
+
+버튼의 label 스타일링을 추가하는것과 별개로, `ButtonStyleConfiguration`의 또다른 프로퍼티를 사용하는 방법을 다음에 배울 것이다.
+
+
