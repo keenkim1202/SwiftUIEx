@@ -12,33 +12,37 @@ struct TextLengthEx: View {
     
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            VStack(alignment: .leading) {
+                Text("Just Text")
                 VStack(alignment: .leading) {
-                    Text("You can deposit from an external ETH wallet to this ETH deposit address or QR code.")
+                    Text("Hi my name is Keen. Nice to meet you. Have a wonderful day!")
                         .font(.system(size: 14))
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .background(.red)
-                    Text("You should deposit ETH using the Ethereum network.")
-                        .font(.system(size: 14, weight: .bold))
+                    Text("Hi my name is Keen. Nice to meet you. Have a wonderful day!")
+                        .font(.system(size: 12))
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .background(.orange)
-                    Text("You should deposit ETH using the Ethereum networ")
-                        .font(.system(size: 14, weight: .bold))
-                        .background(.green)
-                    Text("You should deposit ETH using the Ethereum network.")
-                        .font(.system(size: 14, weight: .bold))
-                        .minimumScaleFactor(0.01)
-                        .lineLimit(2)
-                        .background(.blue)
-                    Text("You should deposit ETH using the Ethereum network. test longer text")
-                        .font(.system(size: 14, weight: .bold))
-                        .minimumScaleFactor(0.01)
-                        .lineLimit(2)
-                        .frame(width: UIScreen.main.bounds.width - 16, alignment: .leading)
-                        .background(.purple)
                 }
-                .background(.white)
+                .foregroundColor(.black)
+                .padding(8)
+                
+                Text("Added Soft-Hyphen")
+                VStack(alignment: .leading) {
+                    Text("Hi my name is Keen. Nice to meet you. Have a wonderful \u{AD}day!")
+                        .font(.system(size: 14))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(.red)
+                    Text("Hi my name is Keen. Nice to meet you. Have a \u{AD}wonderful day!")
+                        .font(.system(size: 12))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(.orange)
+                }
+                .foregroundColor(.black)
+                .padding(8)
             }
+            .padding(32)
             .background(.gray)
-            .padding(16)
         }
     }
 }
