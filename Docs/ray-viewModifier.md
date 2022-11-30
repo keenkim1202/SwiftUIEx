@@ -68,5 +68,26 @@ custom view modifier를 생성하는데 사용되는 가장 흔한 방법은 당
 
 당신만의 view modifier들을 만듦으로써 이 시간을 아끼는 마법이 일어나는 법을 배울 수 있다.
 
+## Building a Title ViewModifier
+당신은 코드를 작성할 때 최적화에 대한 생각을 하지 않는다. 우선 작동하게 만든다 그런 후 리팩토링을 한다.
 
+UI component들을 스타일링할 때, 다른 파일에서 반복적으로 사용하는 modifier들의 코드 라인 수를 살펴보아라.
+Xcode를 열고 프로젝트의 `PetDetailedInformationView.swift` 파일을 보아라.
+`VStack` 안에 있는 각각의 `Text` 뷰들의 상단을 보아라:
+```swift
+.lineLimit(1)
+.font(.title2)
+.bold()
+``` 
+stack안에 있는 각각의 title은 동일한 스타일링이 반복적인 modifier들의 묶음을 사용하고 있다.
+이 반복을 피할 수 있는 다른 접근 방법을 선택할 수도 있다.
 
+모든 `Text`와 `HStack` 짝은 동일하다.
+다른 부분은 title에 들어가는 글자와 `SFSymbol` 아이콘 그리고 그에 따른 상세 프로퍼티 이다.
+
+`Text`와 `HStack`을 분리된 뷰로 추출하여 그들에게 위의 값들을 제공할 수 있다.
+하지만, 당신은 여전이 5개의 다른 파라미터들을 불러야 한다.
+
+대신, 당신은 view modifier를 생성할 수 있다!
+
+  
