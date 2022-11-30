@@ -8,3 +8,9 @@ struct DetailedInfoTitleModifier: ViewModifier {
             .bold()
     }
 }
+
+extension Text {
+    func detailedInfoTitle() -> some View {
+        modifier(DetailedInfoTitleModifier())
+    }
+}

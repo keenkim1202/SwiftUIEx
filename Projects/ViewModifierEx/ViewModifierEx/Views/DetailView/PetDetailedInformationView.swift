@@ -7,7 +7,7 @@ struct PetDetailedInformationView: View {
         VStack(alignment: .leading, spacing: 8) {
             // Breed
             Text("Breed")
-                .modifier(DetailedInfoTitleModifier())
+                .detailedInfoTitle()
             HStack {
                 Image(systemName: "pawprint")
                     .resizable()
@@ -19,7 +19,7 @@ struct PetDetailedInformationView: View {
             
             // Characteristics
             Text("Characteristics")
-                .modifier(DetailedInfoTitleModifier())
+                .detailedInfoTitle()
             HStack {
                 Image(systemName: "theatermasks.circle")
                     .resizable()
@@ -31,7 +31,7 @@ struct PetDetailedInformationView: View {
             
             // Size
             Text("Size")
-                .modifier(DetailedInfoTitleModifier())
+                .detailedInfoTitle()
             HStack {
                 Image(systemName: "flame")
                     .resizable()
@@ -43,7 +43,7 @@ struct PetDetailedInformationView: View {
             
             // Sex
             Text("Sex")
-                .modifier(DetailedInfoTitleModifier())
+                .detailedInfoTitle()
             HStack {
                 Image(systemName: "bolt.circle")
                     .resizable()
@@ -55,7 +55,7 @@ struct PetDetailedInformationView: View {
             
             // Age
             Text("Age")
-                .modifier(DetailedInfoTitleModifier())
+                .detailedInfoTitle()
             HStack {
                 Image(systemName: "star")
                     .resizable()
