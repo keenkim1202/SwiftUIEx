@@ -12,6 +12,7 @@ SwiftUI 를 사용한 UI 그리기 연습 레포
 
 ## Note
 - [GeometryReader](Note/GeometryReader.md)
+- [Soft-Hyphen](Note/soft-hyphen.md)
 
 ## Project
 - [CustomSlider](https://github.com/keenkim1202/SwiftUIEx/tree/main/Projects/CustomSlider)
