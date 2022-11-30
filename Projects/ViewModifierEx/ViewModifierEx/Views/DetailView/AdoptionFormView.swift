@@ -26,14 +26,7 @@ struct AdoptionFormView: View {
                     emailValidator.email = ""
                 } label: {
                     Text("Adopt Me")
-                        .font(.title2)
-                        .padding(.horizontal, 30)
-                        .padding(.vertical, 8)
-                        .foregroundColor(.pink)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(.pink, lineWidth: 1.5)
-                        }
+                        .buttonLabel()
                 }
                 .alert("Thank you!", isPresented: $showingAlert) {
                     Button("OK", role: .cancel) {}

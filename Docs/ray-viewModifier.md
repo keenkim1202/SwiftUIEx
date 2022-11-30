@@ -255,5 +255,54 @@ extension Text {
 
 다음으로, 당신은 `isPressed` 프로퍼티에 의존하여 변화하는 커스텀 스타일링을 하는 button modifier를 만드는 법을 배울 것이다.
 
+## Building a Button Style
+custom view modifier를 만드는 가장 흔한 방법은 여러 곳에서 반복적으로 사용되는 같은 코드를 재사용하는 것이다.  
 
+</br>
 
+`AdoptionFormView.swift`를 열아보자.  
+당신은 `Text("Adopt Me")` 버튼이 보일 것이고 button의 label에 대한 스타일링 modifier들의 묶음을 볼 수 있을 것이다.
+```swift
+Text("Adopt Me")
+    .font(.title2)
+    .padding(.horizontal, 30)
+    .padding(.vertical, 8)
+    .foregroundColor(.pink)
+    .overlay {
+        RoundedRectangle(cornerRadius: 8)
+            .stroke(.pink, lineWidth: 1.5)                                
+    }
+```
+
+이제 위의 코드들에 대한 modifier를 만들어볼 것이다.
+
+</br>
+
+## Creating a Button ViewModifier
+`ViewModifiers.swift` 파일을 열고 아래의 코드를 작성해보자.
+```swift
+struct ButtonLabelModifier: ViewModifier {
+  func body(content: Content) -> some View {
+    content
+      .font(.title2)
+      .padding(.horizontal, 30)
+      .padding(.vertical, 8)
+      .foregroundColor(Color.pink)
+      .overlay(
+        RoundedRectangle(corㅠnerRadius: 8)
+          .stroke(Color.pink, lineWidth: 1.5)
+      )
+  }
+}
+
+func buttonLabel() -> some View {
+  modifier(ButtonLabelModifier())
+}
+```
+
+</br>
+
+그리고 `AdoptionFormView.swift` 파일을 열고 `Text("Adopt Me")`밑에 아래의 modifier로 대체하자.
+```swift
+.buttonLabel()
+```
