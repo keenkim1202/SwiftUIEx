@@ -20,6 +20,7 @@
 		1C1A9F4729372E9E000CE51D /* PetDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F4629372E9E000CE51D /* PetDetailedView.swift */; };
 		1C1A9F4929372EA7000CE51D /* PetDetailedInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F4829372EA7000CE51D /* PetDetailedInformationView.swift */; };
 		1C1A9F4B29372EAD000CE51D /* AdoptionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F4A29372EAD000CE51D /* AdoptionFormView.swift */; };
+		1C1A9F4D293733F6000CE51D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F4C293733F6000CE51D /* ViewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		1C1A9F4629372E9E000CE51D /* PetDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailedView.swift; sourceTree = "<group>"; };
 		1C1A9F4829372EA7000CE51D /* PetDetailedInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailedInformationView.swift; sourceTree = "<group>"; };
 		1C1A9F4A29372EAD000CE51D /* AdoptionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptionFormView.swift; sourceTree = "<group>"; };
+		1C1A9F4C293733F6000CE51D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				1C1A9F4629372E9E000CE51D /* PetDetailedView.swift */,
+				1C1A9F4C293733F6000CE51D /* ViewModifiers.swift */,
 				1C1A9F4829372EA7000CE51D /* PetDetailedInformationView.swift */,
 				1C1A9F4A29372EAD000CE51D /* AdoptionFormView.swift */,
 			);
@@ -214,6 +217,7 @@
 				1C1A9F28293723E6000CE51D /* ViewModifierExApp.swift in Sources */,
 				1C1A9F3E29372B80000CE51D /* PetListView.swift in Sources */,
 				1C1A9F4029372BD7000CE51D /* PetCardView.swift in Sources */,
+				1C1A9F4D293733F6000CE51D /* ViewModifiers.swift in Sources */,
 				1C1A9F3829372B0D000CE51D /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
