@@ -90,4 +90,54 @@ stack안에 있는 각각의 title은 동일한 스타일링이 반복적인 mod
 
 대신, 당신은 view modifier를 생성할 수 있다!
 
-  
+## Creating a Text ViewModifier
+프로젝트의 ViewModifiers.swift 라는 파일을 보라.
+당신은 당신의 모든 modifier들을 이 파일 안에 작성하여 편리하게 한 곳에 보관할 수 있다.
+
+모든 custom modifier를 하나의 파일에 보관하는 것은 유지보수가 편하게 한다.
+`application-wide style guide`를 만든다고 생각해바라.
+어느 누구도 이 view modifier 파일을 참조하여 그들이 원하는 UI compoenent가 있으면, app style과 맞게 생성하고, 과거에는 어떻게 생겼었는지 확인할 수 있다.
+
+ViewModifiers.swift 파일에 다음과 같은 코드를 추가해보자.
+```swift
+// 1
+struct DetailedInfoTitleModifier: ViewModifier {
+  // 2
+  func body(content: Content) -> some View {
+    content
+      // 3
+      .lineLimit(1)
+      .font(.title2)
+      .bold()
+  }
+}
+```
+
+다음과 같은 일이 일어난다:
+- 1) `ViewModifier` 프로토콜을 준수하는 `DetailedInfoTitleModifier` 라는 구조체를 생성한다.
+    - 특히 당신이 추가적인 modifier를 생성할 때, 이런 서술적인 이름을 제공하는 것은 좋은 아이디어이다.
+- 2) `ViewModifier`를 준수하기 위해, 당신은 `some View`를 리턴하는 `body(content:)` 메서드를 추가해야 한다.
+    - `content` 파라미터는 당신의 modifier를 적용하는 `view` 이다.
+- 3) 마무리로, 당신은 모든 당신의 modifier들을 추가한다.
+
+이제, 다시 `PetDetailedInformationView.swift` 파일로 돌아가서 `Text("Breed")` 밑의 3개의 modifier를 아래의 코드로 대체해보자.
+```swift
+.modifier(DetailedInfoTitleModifier())
+```
+
+앱을 빌드하고 실행해보라. 펫을 선택하면 아무것도 바뀐게 없음을 볼 수 있을 것이다. (= 이전과 같이 잘 작동한다는 것)
+
+이것은 정확히 당신이 원하던 결과다. 모든 것이 의도된대로 정확히 보이고 있다.
+당신은 스타일링을 바꾸지 않았다. 그저 다른 파일에 modifier를 옮겼을 뿐.
+
+이제, 같은 moditier를 아래의 나머지 title들에도 적용해보자.
+- `Text("Characteristics")`
+- `Text("Size")`
+- `Text("Sex")`
+- `Text("Age")`
+
+이제 당신은 매번 당신의 modifier를 적용시키기 위해 `.modifier(DetailedInfoTitleModifier())`를 불러야한는 것을 알아챘을 것이다.
+그것은 불필요하다.
+
+이것을 피하기 위해 당신은 `Text`를 확장하여 좀 더 편리하게 당신의 modifier에 접근할 수 있도록 만들 것이다.
+
