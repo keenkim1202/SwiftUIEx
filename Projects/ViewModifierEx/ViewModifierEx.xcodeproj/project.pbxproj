@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1C1A9F28293723E6000CE51D /* ViewModifierExApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F27293723E6000CE51D /* ViewModifierExApp.swift */; };
-		1C1A9F2A293723E6000CE51D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F29293723E6000CE51D /* ContentView.swift */; };
 		1C1A9F2C293723E7000CE51D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1A9F2B293723E7000CE51D /* Assets.xcassets */; };
 		1C1A9F2F293723E7000CE51D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1A9F2E293723E7000CE51D /* Preview Assets.xcassets */; };
 		1C1A9F3629372AEB000CE51D /* pets.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C1A9F3529372AEB000CE51D /* pets.json */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		1C1A9F24293723E6000CE51D /* ViewModifierEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewModifierEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1A9F27293723E6000CE51D /* ViewModifierExApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierExApp.swift; sourceTree = "<group>"; };
-		1C1A9F29293723E6000CE51D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C1A9F2B293723E7000CE51D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1A9F2E293723E7000CE51D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C1A9F3529372AEB000CE51D /* pets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pets.json; sourceTree = "<group>"; };
@@ -72,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				1C1A9F27293723E6000CE51D /* ViewModifierExApp.swift */,
-				1C1A9F29293723E6000CE51D /* ContentView.swift */,
+				1C1A9F4C293733F6000CE51D /* ViewModifiers.swift */,
 				1C1A9F4329372D2F000CE51D /* Extensions */,
 				1C1A9F4229372D27000CE51D /* Model */,
 				1C1A9F4129372D1E000CE51D /* Views */,
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				1C1A9F4629372E9E000CE51D /* PetDetailedView.swift */,
-				1C1A9F4C293733F6000CE51D /* ViewModifiers.swift */,
 				1C1A9F4829372EA7000CE51D /* PetDetailedInformationView.swift */,
 				1C1A9F4A29372EAD000CE51D /* AdoptionFormView.swift */,
 			);
@@ -211,7 +208,6 @@
 				1C1A9F4929372EA7000CE51D /* PetDetailedInformationView.swift in Sources */,
 				1C1A9F4729372E9E000CE51D /* PetDetailedView.swift in Sources */,
 				1C1A9F3C29372B52000CE51D /* Pet.swift in Sources */,
-				1C1A9F2A293723E6000CE51D /* ContentView.swift in Sources */,
 				1C1A9F4B29372EAD000CE51D /* AdoptionFormView.swift in Sources */,
 				1C1A9F3A29372B37000CE51D /* EmailValidator.swift in Sources */,
 				1C1A9F28293723E6000CE51D /* ViewModifierExApp.swift in Sources */,

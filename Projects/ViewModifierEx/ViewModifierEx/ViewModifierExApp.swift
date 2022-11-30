@@ -4,7 +4,7 @@ import SwiftUI
 struct ViewModifierExApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PetListView()
         }
     }
 }
