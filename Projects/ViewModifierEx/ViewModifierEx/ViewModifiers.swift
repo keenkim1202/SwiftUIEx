@@ -23,6 +23,20 @@ struct ButtonLabelModifier: ViewModifier {
     }
 }
 
+struct PrimaryButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.title2)
+            .padding(.horizontal, 30)
+            .padding(.vertical, 8)
+            .foregroundColor(.pink)
+            .overlay {
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(.pink, lineWidth: 1.5)
+            }
+    }
+}
+
 extension Text {
     func detailedInfoTitle() -> some View {
         modifier(DetailedInfoTitleModifier())
