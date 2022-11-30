@@ -141,3 +141,40 @@ struct DetailedInfoTitleModifier: ViewModifier {
 
 이것을 피하기 위해 당신은 `Text`를 확장하여 좀 더 편리하게 당신의 modifier에 접근할 수 있도록 만들 것이다.
 
+## Extending the Text View
+`ViewModifiers.swift` 파일을 열고 아래의 코드를 작성해보자.
+```swift
+extension Text {
+  func detailedInfoTitle() -> some View {
+    modifier(DetailedInfoTitleModifier())
+  }
+}
+```
+
+당신은 `Text`를 확장하여 `some View`를 리턴하는 `detailedInfoTitle()` 이라는 메서드를 만들었다.
+당신은 이제 이전 스탭에서 만든 modifier를 부르기 위해 한줄의 코드를 추가하면 된다.
+
+메서드의 이름은 당신의 custom modifier의 이름이다.
+이제 당신은 `.modifier()`를 매번 불러 적용시킲 필요 없다.
+
+`PetDetailedInformationView.swift` 파일을 열고 모든 5개의 title에 대해 `.modifier(DetailedInfoTitleModifier())`를 아래의 코드로 대체하자.
+```swift
+.detailedInfoTitle()
+```
+
+빌드하고 실행해보아라. 당신의 UI는 여전히 시각적으로 바뀐 것이 없을 것이다.
+당신은 당신의 첫 view modifier를 만들었다.
+
+당신은 나에게 다음의 질문을 할것이다.
+```
+"왜 굳이 나의 코드를 다른 파일로 옮기게 만들었는가?"
+```
+당신 앞에 있는 코드는 간단한 UI를 가진 간단한 앱이다. 당신이 modifier를 생성하고 몇개의 코드줄들을 다른 분리된 파일로 옮길 때, 당신의 뷰는 더 작아졌고 가독성이 올라갔다.
+이것은 큰 프로젝트에서는 수천개의 코드줄에 해당하는 눈에 띌 정도의 효과를 가져온다.
+
+하지만 당신은 아직 다 한게 아니다!
+
+다음으로, 당신은 `isPressed` 프로퍼티에 의존하여 변화하는 커스텀 스타일링을 하는 button modifier를 만드는 법을 배울 것이다.
+
+
+
