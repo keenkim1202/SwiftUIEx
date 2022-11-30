@@ -11,6 +11,15 @@
 		1C1A9F2A293723E6000CE51D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F29293723E6000CE51D /* ContentView.swift */; };
 		1C1A9F2C293723E7000CE51D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1A9F2B293723E7000CE51D /* Assets.xcassets */; };
 		1C1A9F2F293723E7000CE51D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1A9F2E293723E7000CE51D /* Preview Assets.xcassets */; };
+		1C1A9F3629372AEB000CE51D /* pets.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C1A9F3529372AEB000CE51D /* pets.json */; };
+		1C1A9F3829372B0D000CE51D /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F3729372B0D000CE51D /* CodableBundleExtension.swift */; };
+		1C1A9F3A29372B37000CE51D /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F3929372B37000CE51D /* EmailValidator.swift */; };
+		1C1A9F3C29372B52000CE51D /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F3B29372B52000CE51D /* Pet.swift */; };
+		1C1A9F3E29372B80000CE51D /* PetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F3D29372B80000CE51D /* PetListView.swift */; };
+		1C1A9F4029372BD7000CE51D /* PetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F3F29372BD7000CE51D /* PetCardView.swift */; };
+		1C1A9F4729372E9E000CE51D /* PetDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F4629372E9E000CE51D /* PetDetailedView.swift */; };
+		1C1A9F4929372EA7000CE51D /* PetDetailedInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F4829372EA7000CE51D /* PetDetailedInformationView.swift */; };
+		1C1A9F4B29372EAD000CE51D /* AdoptionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A9F4A29372EAD000CE51D /* AdoptionFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		1C1A9F29293723E6000CE51D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C1A9F2B293723E7000CE51D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1A9F2E293723E7000CE51D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C1A9F3529372AEB000CE51D /* pets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pets.json; sourceTree = "<group>"; };
+		1C1A9F3729372B0D000CE51D /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		1C1A9F3929372B37000CE51D /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		1C1A9F3B29372B52000CE51D /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		1C1A9F3D29372B80000CE51D /* PetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListView.swift; sourceTree = "<group>"; };
+		1C1A9F3F29372BD7000CE51D /* PetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCardView.swift; sourceTree = "<group>"; };
+		1C1A9F4629372E9E000CE51D /* PetDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailedView.swift; sourceTree = "<group>"; };
+		1C1A9F4829372EA7000CE51D /* PetDetailedInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailedInformationView.swift; sourceTree = "<group>"; };
+		1C1A9F4A29372EAD000CE51D /* AdoptionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptionFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +71,10 @@
 			children = (
 				1C1A9F27293723E6000CE51D /* ViewModifierExApp.swift */,
 				1C1A9F29293723E6000CE51D /* ContentView.swift */,
+				1C1A9F4329372D2F000CE51D /* Extensions */,
+				1C1A9F4229372D27000CE51D /* Model */,
+				1C1A9F4129372D1E000CE51D /* Views */,
+				1C1A9F3529372AEB000CE51D /* pets.json */,
 				1C1A9F2B293723E7000CE51D /* Assets.xcassets */,
 				1C1A9F2D293723E7000CE51D /* Preview Content */,
 			);
@@ -65,6 +87,51 @@
 				1C1A9F2E293723E7000CE51D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1C1A9F4129372D1E000CE51D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A9F4429372E7C000CE51D /* ListView */,
+				1C1A9F4529372E82000CE51D /* DetailView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C1A9F4229372D27000CE51D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A9F3B29372B52000CE51D /* Pet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C1A9F4329372D2F000CE51D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A9F3729372B0D000CE51D /* CodableBundleExtension.swift */,
+				1C1A9F3929372B37000CE51D /* EmailValidator.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1C1A9F4429372E7C000CE51D /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A9F3D29372B80000CE51D /* PetListView.swift */,
+				1C1A9F3F29372BD7000CE51D /* PetCardView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		1C1A9F4529372E82000CE51D /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A9F4629372E9E000CE51D /* PetDetailedView.swift */,
+				1C1A9F4829372EA7000CE51D /* PetDetailedInformationView.swift */,
+				1C1A9F4A29372EAD000CE51D /* AdoptionFormView.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +194,7 @@
 			files = (
 				1C1A9F2F293723E7000CE51D /* Preview Assets.xcassets in Resources */,
 				1C1A9F2C293723E7000CE51D /* Assets.xcassets in Resources */,
+				1C1A9F3629372AEB000CE51D /* pets.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +205,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1A9F4929372EA7000CE51D /* PetDetailedInformationView.swift in Sources */,
+				1C1A9F4729372E9E000CE51D /* PetDetailedView.swift in Sources */,
+				1C1A9F3C29372B52000CE51D /* Pet.swift in Sources */,
 				1C1A9F2A293723E6000CE51D /* ContentView.swift in Sources */,
+				1C1A9F4B29372EAD000CE51D /* AdoptionFormView.swift in Sources */,
+				1C1A9F3A29372B37000CE51D /* EmailValidator.swift in Sources */,
 				1C1A9F28293723E6000CE51D /* ViewModifierExApp.swift in Sources */,
+				1C1A9F3E29372B80000CE51D /* PetListView.swift in Sources */,
+				1C1A9F4029372BD7000CE51D /* PetCardView.swift in Sources */,
+				1C1A9F3829372B0D000CE51D /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

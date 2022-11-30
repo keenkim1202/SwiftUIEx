@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  ViewModifierEx
-//
-//  Created by KeenKim on 2022/11/30.
-//
+// https://www.kodeco.com/34699757-swiftui-view-modifiers-tutorial-for-ios
 
 import SwiftUI
 
