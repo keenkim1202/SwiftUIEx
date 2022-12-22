@@ -54,4 +54,5 @@ Divider()
 ```
 - foregroundColor()를 사용하지 않는 이유는 
     - 그걸 사용하면 Divider의 두께를 증가시켰을 때 아래의 그림처럼 중간에 회색실선이 남기 때문이다.
+<img width="530" alt="divider" src="https://user-images.githubusercontent.com/59866819/209164051-9f3115ad-69c0-48a1-9617-14eeb81c1f31.png">
 
