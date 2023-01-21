@@ -11,22 +11,15 @@ struct ContentView: View {
     @State var text: String = ""
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            TextField(text: $text.max(8)) {
-                Rectangle()
-                    .background(.black)
-            }
+        ZStack {
+            TextField("write some text", text: $text.max(8))
+                .background(.yellow)
         }
         .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    
     static var previews: some View {
         DemoView()
     }
