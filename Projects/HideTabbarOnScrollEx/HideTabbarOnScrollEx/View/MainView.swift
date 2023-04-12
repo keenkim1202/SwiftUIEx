@@ -7,6 +7,7 @@
 
 import SwiftUI
 // https://www.youtube.com/watch?v=1RGd-I7KNVA&t=58s
+
 struct MainView: View {
     @State var currentTab: CustomTab = .home
     var bottomEdge: CGFloat
@@ -14,7 +15,7 @@ struct MainView: View {
     @State var hideBar = false
     
     init(bottomEdge: CGFloat) {
-        UITabBar.appearance().isHidden = false
+        UITabBar.appearance().isHidden = true
         self.bottomEdge = bottomEdge
     }
     
@@ -43,8 +44,8 @@ struct MainView: View {
                 // custom tabbar
                 CustomTabbar(currentTab: $currentTab, bottomEdge: bottomEdge)
             }
-            // top padding = 15, infoview hight = 60, bottom edge
-            .offset(y: hideBar ? (15 + 35 + bottomEdge) : 0)
+            // top padding = 15, custom tab content = 35, infoview hight = 60, bottom edge
+            .offset(y: hideBar ? (15 + 35 + 60 + bottomEdge) : 0)
             ,alignment: .bottom
         )
     }
@@ -53,10 +54,9 @@ struct MainView: View {
         var body: some View {
             ZStack {
                 Rectangle()
-                    .frame(height: 60)
+                    .frame(height: 50)
                     .roundedCorner(8, corners: [.topLeft, .topRight])
                     .foregroundColor(.blue)
-                    .opacity(0.5)
                 HStack {
                     Text("Do you need help?")
                         .foregroundColor(.white)
@@ -65,6 +65,7 @@ struct MainView: View {
                         .foregroundColor(.orange)
                 }
             }
+            .frame(height: 50)
         }
     }
 }
