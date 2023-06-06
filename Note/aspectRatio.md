@@ -20,24 +20,3 @@ Image("someImage")
     .resizable()
     .aspectRatio(contentMode: .fit)
 ```
-
-# SwiftUI가 제안한 사이즈는 어떻게 알아낼 수 있을까
-- 공식적으로 알아내는 방법이 문서화되어 있지는 않다.
-- 유일하게 참고할 수 있는 자료: [WWDC 2019 - Building Custom Views with SwiftUI](https://developer.apple.com/videos/play/wwdc2019/237/)
-
-- `sizeThatFits`을 override할 수 있는 `_ArchivableView` 라는 프로토콜을 활용하면 알아낼 수 있다.
-- codes from: [chriseidhof > aspedctratio.swift](https://gist.github.com/chriseidhof/26151294fbceeca21eb1f857372cfd0f#file-aspectratio-swift)
-
-```swift
-struct TestView: _ArchivableView {
-    var body: some View {
-        Rectangle()
-    }
-    
-    func sizeThatFits(in proposedSize: _ProposedSize) -> CGSize {
-        print(proposedSize.pretty)
-        return proposedSize.orDefault
-    }
-}
-
-```
