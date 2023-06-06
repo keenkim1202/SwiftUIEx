@@ -21,7 +21,7 @@ Image("someImage")
     .aspectRatio(contentMode: .fit)
 ```
 
-# SwiftUI가 제안한 사이즈는 어떻게 알아낼 수 있ㅇ르까
+# SwiftUI가 제안한 사이즈는 어떻게 알아낼 수 있을까
 - 공식적으로 알아내는 방법이 문서화되어 있지는 않다.
 - 유일하게 참고할 수 있는 자료: [WWDC 2019 - Building Custom Views with SwiftUI](https://developer.apple.com/videos/play/wwdc2019/237/)
 
