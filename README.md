@@ -31,7 +31,8 @@ SwiftUI 를 사용한 UI 그리기 연습 레포
     - practice how to make view modifier
 - [MultilineViewEx](Projects/MultilineViewEx)
     - practice if the view inside the HStack is likely to be off the screen, show it in the lower line
-
+- [SwipableTabView](Projects/SwipableTabView.md)
+    - make tab view that can change tabs by swipe gesture
 
 ### SwiftUI에서의 CustomView
 - 두 가지 구조체를 선언
