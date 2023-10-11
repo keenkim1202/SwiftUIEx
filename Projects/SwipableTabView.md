@@ -1,6 +1,8 @@
 
 ## Video
 
+https://github.com/keenkim1202/SwiftUIEx/assets/59866819/5d7ed557-16f2-4ce8-a478-539f7b9e3a38
+
 
 ## Code
 
