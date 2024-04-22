@@ -1,3 +1,7 @@
+## 자동 무한 스크롤 하는 베너 만들기
+- 기존 배열 맨 앞에 마지막 원소, 맨 뒤에 첫번째 원소를 추가하여 무한 스크롤이 가능하게 한다.
+
+```swift
 import SwiftUI
 import Combine
 
@@ -96,3 +100,4 @@ struct InfinityCarouselView: View {
         }
     }
 }
+```
